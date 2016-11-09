@@ -1,0 +1,271 @@
+body {
+	background-color: #dedede;
+	font-family:'Cormorant Garamond', serif;
+}
+
+header {
+	background-color: white;
+	margin: 15px 12px;
+	font-family: 'Cormorant Garamond', serif;
+	overflow: hidden;
+}
+
+header a {
+	color: black;
+	text-decoration: none;
+	cursor: url(pointer.jpg);
+}
+
+h1 {
+	font-size: 15px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+ul li {
+	font-size: 10px;
+	list-style: none;
+	float: left;
+	display: inline-block;
+	padding: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.menu > li:nth-child(1) > a {
+	color: #447e42;
+}
+
+.menu {
+	display: inline-block;
+	float: left;
+	margin: 0 10px 0;
+	padding: 5px;
+	font-stretch: extra-expanded;
+}
+
+nav {
+	overflow: hidden;
+	padding: 0;
+	display: inline-block;
+	float: left;
+	width: 80%;
+	margin: 0;
+	text-align: left;
+}
+
+.nav-studio a {
+	display: inline-block;
+	text-transform: none;
+	text-decoration: none;
+	font-size: 13px;
+	color: #545454;
+	padding: 5px;
+}
+
+.nav-studio a:hover {
+	color: #447e42;;
+} 
+
+.nav-studio li:nth-child(1) > a:before {
+	content: "> ";
+}
+
+.nav-studio li:nth-child(2) > a:before {
+	content: "> ";
+	visibility: hidden;
+}
+
+.nav-studio li:nth-child(2):hover > a:before {
+	display: inline-block;
+	color: #447e42;
+	visibility: visible;
+}
+
+
+.nav-studio li:nth-child(3) > a:before {
+	content: "> ";
+	visibility: hidden;
+}
+
+.nav-studio li:nth-child(3):hover > a:before {
+	display: inline-block;
+	color: #447e42;
+	visibility: visible;
+}
+
+.nav-studio li:nth-child(1) > a {
+	color: #447e42;
+}
+
+.main-studio {
+	display: block;
+	float: left;
+	background-color: white;
+	margin: 15px;
+	font-weight: bold;
+	font-size: 15px;
+	color: #545454;
+	padding: 0 30px;
+}
+
+.main-studio p {
+	line-height: 25px;
+	font-size: 14px;
+	margin-top: 25px;
+}
+
+.social-main {
+	width: 100%;
+	overflow: hidden;
+	margin-top: 40px;
+}
+
+.social-fb {
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	float: left;
+}
+
+.social-mail {
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	float: left;
+}
+
+.social-fb {
+	background-image: url(facebook-icon.png);
+}
+
+.social-mail {
+	background-image: url(email-icon.png);
+	margin-left: 15px;
+}
+
+.social-fb:hover {
+	background-position: bottom;
+	cursor: pointer;
+}
+
+.social-mail:hover {
+	background-position: bottom;
+	cursor: pointer;
+}
+
+.follow-us {
+	display: block;
+}
+
+.follow-us a {
+	color: #545454;
+}
+
+span {
+	color: #404040
+	font-weight: bolder;
+}
+
+
+@media screen and (min-width: 768px) {
+
+	body {
+		background-color: #dedede;
+	}
+
+
+	main {
+		overflow: hidden;
+	}
+
+	header {
+		position: fixed;
+		top: 30px;
+		left: 30px;
+		width: 200px;
+		height: 180px;
+		z-index: 2;
+	}
+
+	header h1 {
+		margin: 10px;
+		font-size: 18px;
+		font-weight: bolder;
+		padding-left: 10px;
+		padding-top: 10px;
+		margin-bottom: 8px;
+	}
+
+	.menu li {
+		display: block;
+		float: none;
+		margin-top: 0;
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 10px;
+	}
+
+	.nav-studio {
+		display: block;
+		position: fixed;
+		width: 100px;
+		height: 200px;
+		left: 0;
+		top: 270px;
+		float: left;
+	}
+
+	.nav-studio ul li a {
+		display: inline-block;
+		float: none;
+		padding: 0;
+	}
+
+	.main-studio {
+		display: inline-block;
+		float: right;
+		width: 65%;
+		height: auto;
+		position: fixed;
+		top: 30px;
+		right: 30px;
+	}
+
+	.main-studio h2 {
+		padding-left: 25px;
+		padding-top: 20px;
+		font-size: 25px;
+	}
+
+	hr {
+		width: 92%;
+	}
+
+	.main-studio > .about-us {
+		padding: 30px;
+		line-height: 30px;
+		font-size: 18px;
+	}
+
+	.social-main {
+		display: inline-block;
+		float: left;
+		width: 15%;
+		margin-left: 25px;
+	}
+
+	.follow-us {
+		display: inline-block;
+		float: left;
+		padding-top: 0;
+		margin: 50px 0;
+		width: 70%;
+	}
+
+
+
+	}

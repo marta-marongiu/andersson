@@ -1,0 +1,278 @@
+body {
+	background-color: black;
+}
+
+header {
+	background-color: white;
+	margin: 20px;
+	font-family: 'Cormorant Garamond', serif;
+	overflow: hidden;
+}
+
+header a {
+	color: black;
+	text-decoration: none;
+	cursor: url(pointer.jpg);
+}
+
+h1 {
+	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+ul li {
+	font-size: 12px;
+	list-style: none;
+	float: left;
+	display: inline-block;
+	padding: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+.menu {
+	display: inline-block;
+	float: left;
+	margin: 0 10px 10px;
+	padding: 5px;
+	font-stretch: extra-expanded;
+}
+
+.label {
+	color: white;
+	font-family:'Cormorant Garamond', serif;
+	margin-left: 20px;
+	font-weight: normal;
+	font-stretch: extra-expanded;
+	text-transform: 
+}
+
+h2 {
+	font-size: 22px;
+	margin-bottom: 0;
+}
+
+h4 {
+	font-size: 15px;
+	margin-top: 5px;
+	letter-spacing: 2px;
+}
+
+.main-box {
+	width: 100%;
+	height: 100%;
+	margin-left: 0 20px;
+	margin-bottom: 0;
+}
+
+.main-box img {
+	width: 90%;
+	height: 100%
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 0;
+}
+
+.side-box {
+	background-color: white;
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+	box-sizing: border-box;
+}
+
+.hide, .first {
+	margin-bottom: 10px;
+	margin-top: 0;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 15px;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.first h3 {
+	font-size: 15px;
+	display: inline-block;
+}
+
+span {
+	font-size: 22px;
+}
+
+.first {
+	margin-top: 20px;
+}
+
+.subtitle-general {
+	display: inline-block;
+}
+
+.second {
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+.second p {
+	padding: 15px 30px;
+	margin: 0; 
+	line-height: 25px;
+	font-stretch: extra-condensed;
+	font-weight: bolder;
+	color: #565656;
+
+}
+
+.side-box a {
+	color: #565656;
+	text-decoration: none;
+	font-weight: bold;
+	font-family:'Cormorant Garamond', serif;
+}
+
+.logo {
+	display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+	
+	body {
+		background-color: white;
+	}
+
+
+	main {
+		overflow: hidden;
+	}
+
+	header {
+		position: fixed;
+		top: 30px;
+		left: 30px;
+		width: 200px;
+		height: 200px;
+		z-index: 2;
+	}
+
+	header h1 {
+		margin: 10px;
+		font-size: 18px;
+		font-weight: bolder;
+		padding-left: 10px;
+		padding-top: 10px;
+		margin-bottom: 8px;
+	}
+
+	.menu li {
+		display: block;
+		float: none;
+		margin-top: 0;
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 10px;
+	}
+
+	h2 {
+		position: absolute;
+		bottom: 140px;
+		left: 40px;
+		font-weight: bolder;
+		text-shadow: 3px 2px 1px #000000;
+		z-index: 2;
+	}
+
+	h4 {
+		position: absolute;
+		bottom: 100px;
+		left: 40px;
+		font-weight: bolder;
+		text-shadow: 3px 1px 1px #000000;
+		z-index: 2;
+	}
+
+	.main-box {
+		display: inline-block;
+		float: left;
+		width: 71%;
+		margin: 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		background-image: url(andersson-big.png);
+		background-size: cover;
+	}
+
+	.main-box img {
+		display: none;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.first {
+		display: inline-block;
+		float: left;
+		width: 28%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 49%;
+		background-color: #092910;
+		margin: 0;
+	}
+
+	.first h3 {
+		display: block;
+		color: #e1e1e1;
+		text-align: center;
+	} 
+
+	span {
+		display: none;
+	}
+
+	.subtitle-general {
+		width: 60%;
+		margin-top: 20%;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+
+	.subtitle-general h3:nth-child(2) {
+		font-size: 25px;
+		font-stretch: extra-expanded;
+	}
+
+	.second {
+		display: inline-block;
+		float: left;
+		width: 28%;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		height: 49%;
+		background-color: #091129;
+		margin: 0;	
+	}
+
+	.second p {
+		color: #e1e1e1;
+		font-weight: normal;
+		margin-left: 20px;
+		padding-bottom: 20%;
+		padding-right: 20%
+
+	}
+
+	.logo {
+		display: block;
+	}
+
+	}
